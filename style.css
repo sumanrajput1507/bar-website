@@ -11,6 +11,10 @@
     padding-inline:15px;
     margin: 0 auto;
 }
+
+img{
+    max-width: 100%;
+}
 body{
     font-family: 'Supermercado One', cursive;
 }
@@ -227,6 +231,14 @@ nav ul li a{
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   position: relative;
+}
+.center::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #eceae6;
+    left: 100px;
 }
 
 .event{
@@ -262,12 +274,9 @@ nav ul li a{
     position: absolute;
     top:318px;
 }
-.services_text_image{
-    display: flex;
-}
 .services_text_image {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     height: 434px;
 }
 .services_card{
@@ -354,7 +363,7 @@ nav ul li a{
 .text h5::after {
     content: "";
     position: absolute;
-    border: 1px solid #dcaa25;
+    border: 2px solid #dcaa25;
     width: 20%;
     bottom: 244px;
     left: 40%;
@@ -423,7 +432,6 @@ nav ul li a{
 }
 .packages{
     margin-block:90px;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -435,15 +443,18 @@ nav ul li a{
     text-align: center;
     background-color: #f3f2ee;
     font-size: 16px;
+    margin: 0 auto;
  }
  .packages h2{
    font-size: 45px;
    margin-block:12px 70px;
+   text-align: center;
    font-family: 'Supermercado One', cursive;
  }
-.packages_price{
-    display: flex;
-    gap:30px;
+ .packages_price {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 }
 .price_card{
     width: 405px;
@@ -567,12 +578,13 @@ nav ul li a{
     font-size: 16px;
     text-transform: uppercase;
   }
-  .drinks{
-    display: flex;
-    gap: 30px;
-    flex-wrap:wrap;
+  .drinks {
+    display: grid;
+    gap:25px;
+    flex-wrap: wrap;
     justify-content: center;
-  }
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
   .drinks_box{
     width: 175px;
     height: 210px;
@@ -607,28 +619,28 @@ nav ul li a{
     font-size:20px;
     color: #333333;
   }
-.articles{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .articles h5{
     padding: 6px 16px;
     background-color: #f3f2ee;
     color: #7f6649;
    font-family: 'Fjalla One', sans-serif;
    font-size: 16px;
+   width: max-content;
+   margin: 0 auto;
 }
 .articles h2{
     font-size: 38px;
     font-family: 'Supermercado One', cursive;
+   text-align: center;
+
 }
 .news_image_text{
     text-align: center;
 }
-.news_main{
-    display: flex;
-    align-items: center;
+.news_main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     gap: 30px;
 }
 .news_image{
@@ -687,7 +699,7 @@ nav ul li a{
     font-size: 16px;
     color: #919191;
 }
-.news_text h5{
+.news_text h5 {
     font-family: 'Supermercado One', cursive;
     font-size: 30px;
     background-color: transparent;
@@ -695,6 +707,7 @@ nav ul li a{
     margin: 0.4em 0 0 0;
     padding-bottom: 0.88em;
     color: #333333;
+    width: max-content;
 }
 .news_text h5::before {
     content: "";
@@ -760,6 +773,14 @@ nav ul li a{
     background: #e2e1dd;
     margin-inline:0px 30px;
 }
+.message_input input:nth-child(4){
+    background-color: #dcaa25;
+    text-align: center;
+   text-transform: uppercase;
+}
+.message_input input:nth-child(4)::placeholder{
+    color: #ffffff;
+}
 .message_input button{
     padding: 19px 28px;
     border: none;
@@ -773,46 +794,56 @@ footer{
     background: #333333;
     padding: 90px 0px;
 }
-.logo{
-        width: 20%;
-        display: grid;
-        place-items: center;
-}
 .footer_main{
+    display: grid;
+    place-items: center;
+}
+.footer_main img{
+    object-fit: contain;
+    object-position: center;
+    margin-block:0px 10px;
+}
+.footer_nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-} 
-.footer_nav{
-    width:70%;
+    border-top:2px solid #fff;
+    width: 100%;
+    padding: 10px;
 }
-.footer_nav ul{
-    gap:10px;
-    display: flex;
+.footer_nav ul h3{
+    color: #ffffff;
+    font-size: 30px;
 }
 .footer_nav ul li a{
     color: #fff;
     font-size: 22px;
     text-transform: capitalize;
 }
-
 .quality_center{
-    width: 40%;
-    display: flex;
-   gap: 20px;
+    margin-block:10px 10px;
 }
 .quality_center span {
     width: 50px;
     height: 50px;
     border: 2px solid white;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-block: 10px 0px;
+    transition:all 0.5s;
 }
 .quality_center span svg{
     width: 30px;
     height: 30px;
+}
+.quality_center span:hover{
+    background-color: #dcaa25;
+    border: 1px solid transparent;
+}
+.quality_center span:hover svg path{
+    fill: white;
+    transition:all 0.5s;
+    
 }
 .top{
     position:relative

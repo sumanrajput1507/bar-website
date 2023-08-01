@@ -6,27 +6,44 @@ $(document).ready(function(){
         $(".navopen").removeClass("open");
       })
 });
+$(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    });
 
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel(function(){
-    item:1;
-    loop:true;
-    nav:true;
-   dots:true;
-   autoplay:true;
-   autoplaySpeed:1000;
-   smartSpeed:1500;
-   autoplayHoverPause:true;
-  }); 
-});
+    const inputs = document.querySelectorAll('input');
+    const comment = document.querySelector('.form-comment');
+    const submit = document.querySelector('.form-submit');
+    
+    function init() {
+      const isFill = [...inputs,comment].every(({value}) => value.trim().length);
+      submit.classList.toggle('enable',isFill);
+    }
+    
+    document.addEventListener('keyup',init,false);
 
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 10) {
-     $('#dynamic').addClass('newClass');
-  } else {
-     $('#dynamic').removeClass('newClass');
-  }
-});
+// $(window).scroll(function(){
+//   if ($(this).scrollTop() > 10) {
+//      $('#dynamic').addClass('newClass');
+//   } else {
+//      $('#dynamic').removeClass('newClass');
+//   }
+// });
 
 
 

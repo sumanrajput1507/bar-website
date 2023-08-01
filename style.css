@@ -162,7 +162,7 @@ nav ul li a{
     width: 100%;
 }
 .best{
-    width: 100% !important;
+    width: 100vw !important;
     height: 100vh;
     text-align: center;
     color: #fff;
@@ -181,7 +181,7 @@ nav ul li a{
     margin-block: 10px 30px;
 }
 .best button{
-    padding: 22px 49px;
+    padding: 14px 20px;
     background-color:#dcaa25;
     text-transform: uppercase;
     outline: none;
@@ -205,7 +205,7 @@ nav ul li a{
     font-size: 16px;
 }
 .welcome h2{
-    width: 70%;
+    width:65%;
     font-size: 55px;
     color: #333333;
     line-height: 110%;
@@ -223,34 +223,30 @@ nav ul li a{
     display: flex;
     gap: 30px;
     align-items: center;
+    width: 100%;
 }
 .arrow_section_back{
         background-color: #eceae6!important;
 }
 .center{
-   width:1060px;
-   height:492px;
+   height: 400px;
+   width: 100%;
 }
 .center img{
     width: 100%;
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-clip: border-box;
+    object-fit: cover;
 }
 .event{
     background-image:linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url(./assets/bar_6.jpeg) ;
    background-position: center center;
    background-size: cover;
    background-repeat: no-repeat;
-   height:752px;
    text-align: center;
    padding-block:90px 0px;
    display:flex;
    flex-direction: column;
    align-items: center;
-   position: relative;
 }
 .event h4{
     width: max-content;
@@ -269,8 +265,6 @@ nav ul li a{
 }
 .Services{
     width: 100%;
-    position: absolute;
-    top:318px;
 }
 .services_text_image {
     display: grid;
@@ -343,7 +337,7 @@ nav ul li a{
 .text{
     font-family: 'Bitter', serif;
     padding: 20px 20px;
-
+   text-align: center;
 }
 .text h6{
     color: #8a745b;
@@ -372,13 +366,14 @@ nav ul li a{
     line-height: 23px;
 }
 .text button{
-    padding: 17px 42px;
+    padding: 14px 20px;
     background-color: rgb(220, 170, 37,0.9);
     font-size: 16px;
     border: none;
     color: #fff;
     text-transform: uppercase;
     margin-block:30px 0px;
+    position: relative;
 }
 .color_grey{
     height:434px;
@@ -404,10 +399,11 @@ nav ul li a{
         font-size:55px;
         font-family: 'Supermercado One', cursive;
 }
-.feedback{
-    width:70%;
+.feedback {
+    width: 70%;
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 .feedback_left {
     width: 50px;
@@ -460,7 +456,6 @@ nav ul li a{
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 }
 .price_card{
-    width: 405px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -510,7 +505,7 @@ nav ul li a{
 }
 .color_change{
     width: 100%;
-      height: 499px;
+    padding-block: 50px;
       background: #eceae6;
       margin-block:15px 0px;
 }
@@ -533,7 +528,7 @@ nav ul li a{
 }
 .color_change button{
     border: none;
-    padding: 16px 39px;
+    padding: 14px 20px;
     margin-block:39px 0px;
     background:#dcaa25;
     color: #ffffff;
@@ -577,16 +572,16 @@ nav ul li a{
     border: none;
     background: #dcaa25;
     color: #ffffff;
-    padding: 20px 48px;
+    padding: 14px 20px;
     font-size: 16px;
     text-transform: uppercase;
   }
   .drinks {
-    display: grid;
+    display: flex;
     gap:25px;
     flex-wrap: wrap;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-block:50px;
 }
   .drinks_box{
     width: 175px;
@@ -594,7 +589,6 @@ nav ul li a{
     background:white;
     border:inset 1px solid #4b2200;
     padding:18px 18px;
-    margin-block:50px;
     cursor: pointer;
     transition: 0.3s;
   }
@@ -623,7 +617,7 @@ nav ul li a{
     color: #333333;
   }
 
-.articles h5{
+.articles>h5{
     padding: 6px 16px;
     background-color: #f3f2ee;
     color: #7f6649;
@@ -640,6 +634,8 @@ nav ul li a{
 }
 .news_image_text{
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .news_main {
     display: grid;
@@ -647,8 +643,8 @@ nav ul li a{
     gap: 30px;
 }
 .news_image{
-    width: 405px;
-    height:253px;
+    min-height:253px;
+    height: 253px;
     position: relative;
     overflow: hidden;
 }
@@ -694,9 +690,12 @@ nav ul li a{
 }
 
 .news_text{
-    width: 405px;
-    height: 329px;
     margin-block:30px 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .news_text h6{
     font-size: 16px;
@@ -710,7 +709,6 @@ nav ul li a{
     margin: 0.4em 0 0 0;
     padding-bottom: 0.88em;
     color: #333333;
-    width: max-content;
 }
 .news_text h5::before {
     content: "";
@@ -738,6 +736,7 @@ nav ul li a{
         background: #dcaa25;
         color: #ffffff;
         margin-block:33px 0px;
+        width: max-content;
 }
 .contact_main{
     background-color:#eceae6;
@@ -785,7 +784,7 @@ nav ul li a{
     color: #ffffff;
 }
 .message_input button{
-    padding: 19px 28px;
+    padding: 20px 20px;
     border: none;
     outline: none;
     background: #dcaa25;
@@ -852,8 +851,8 @@ footer{
     border-radius: 50%;
 }
 .quality_center span svg{
-    width: 30px;
-    height: 30px;
+    width: 17px;
+    height: 17px;
 }
 .quality_center span:hover{
     background-color: #dcaa25;
@@ -917,3 +916,19 @@ input:focus, textarea:focus { background-color: rgba(255,255,255,0.5); }
     pointer-events: auto;
     color: var(--text);
 }   
+
+.nav-fixed {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    background-color: #242222;
+}
+
+.nav-fixed .header_wrap {
+    padding-block: 10px;
+}
+
+.nav-fixed .logo img {
+    width: 70px;
+    height: 70px;
+}

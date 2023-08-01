@@ -1,6 +1,9 @@
 @media (max-width:992px) {
-  .drinks {
-    grid-template-columns: 1fr 1fr 1fr;
+  .best h4,.welcome h6,.event h4,.text h6,.testimonials h6,.price_box h6,.cocktail_main p,.footer_text p,.articles>h5 {
+    font-size: 15px;
+}
+  .best p {
+    font-size: 48px;
 }
 .text h5 {
   width: max-content;
@@ -12,29 +15,88 @@
   bottom: 215px;
 }
 .center {
-  width: 90vw;
   background-position: top;
 }
+.news_main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.feedback {
+  align-items: center;
+}
+
+.welcome h2 {
+  width: auto;
+  font-size: 37px;
+}
+.welcome p {
+  width: auto;
+  font-size: 15px;
+}
+.event h2 {
+  margin-block: 12px 30px;
+  font-size: 37px;
+}
+.text h5 {
+  font-size: 22px;
+}
+.text button {
+  padding: 11px 29px;
+}
+.testimonials h2 {
+  font-size: 37px;
+}
+.packages h2 {
+  font-size: 37px;
+  margin-block: 12px 50px;
+}
+.price_box span {
+  font-size: 25px;
+}
+.color_change span{
+  font-size: 13px;
+}
+.color_change :nth-child(4) {
+  font-size: 34px;
+}
+.cocktail_main h2 {
+  font-size: 37px;
+}
+.news_text h5 {
+  font-size: 32px;
+  margin: 0 auto;
+}
+.footer_text h3 {
+  font-size: 32px;
+}
+.footer_main {
+  gap:unset;
+  padding-inline: 42px;
+}
+.articles h2 {
+  font-size: 32px;
+}
+
 }
 @media (max-width:768px) {
-  .news_main {
+  section {
+    margin-block: 70px 0px;
+}
+#w768{
+  display:none;
+}
+.news_main {
     display: flex;   
     flex-direction: column;
     align-items: center;
+    gap:20px; 
 }
 .packages_price {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.drinks {
-  grid-template-columns:1fr;
-}
-.drinks_box {
-  width: 70vw;
-}
-.drinks_box_border {
-  width: 65vw;
 }
 .message_input{
   display: flex;
@@ -45,6 +107,62 @@
   width: 60vw;
   margin-block: 10px;
 }
+.news_text {
+  height: 300px;
 }
-
-
+footer {
+  margin-block: 30px 0px;
+  padding: 70px 0px;
+}
+.price_card {
+  width: 80%;
+}
+.footer_main {
+  gap: 35px;
+  padding-inline: 42px;
+}
+}
+@media (max-width:540px) {
+.best p,.text h5,.color_change :nth-child(4),.welcome h2,.best p,.event h2,.cocktail_main h2,.testimonials h2{
+  font-size: 32px;
+}
+.text h6,.welcome h6,.welcome p,.best h4,.event h4,.testimonials h6,.packages h5,.cocktail_main h5,.best button,.text button,.color_change button,.cocktail_main button,.news_text button{
+  font-size: 12px;
+}
+.margin {
+  margin-block: 12px 16px;
+}
+.news_text {
+  margin-block: 20px 0px;
+  justify-content:unset;
+}
+.packages h2 {
+  font-size: 24px;
+  margin-block: 10px 30px;
+}
+.cocktail_main p {
+  font-size: 14px;
+}
+.news_text {
+  height: 265px;
+}
+.footer_text {
+  width: 100%;
+  text-align: center;
+}
+.footer_text p {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.quality_center {
+  display: flex;
+  margin-block: 0px 15px;
+  align-items: center;
+  justify-content: center;
+}
+.footer_main {
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+}

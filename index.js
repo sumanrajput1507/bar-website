@@ -11,18 +11,13 @@ $(document).ready(function() {
             autoPlay: 3000,
             items : 1,
             loop: true,
-            dots: true,
+            dots:true,
+            responsive:{
+              item:1,
+            }
+            
         });
     });
-// $(".owl-carousel").owlCarousel({
-//     autoPlay: 3000, //Set AutoPlay to 3 seconds
-    
-
-//     items : 7,
-//     margin:10,
-//     // itemsDesktop : [1199,5],
-//     itemsDesktopSmall : [600, 6]
-//   });
 
     const inputs = document.querySelectorAll('input');
     const comment = document.querySelector('.form-comment');
@@ -35,13 +30,13 @@ $(document).ready(function() {
     
     document.addEventListener('keyup',init,false);
 
-// $(window).scroll(function(){
-//   if ($(this).scrollTop() > 10) {
-//      $('#dynamic').addClass('newClass');
-//   } else {
-//      $('#dynamic').removeClass('newClass');
-//   }
-// });
+    $(window).scroll(function(){
+      if ($(this).scrollTop() >= 10) {
+         $('#dynamic').addClass('nav-fixed');
+      } else {
+         $('#dynamic').removeClass('nav-fixed');
+      }
+   });
 
 
 

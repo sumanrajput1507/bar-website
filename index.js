@@ -8,23 +8,21 @@ $(document).ready(function(){
 });
 $(document).ready(function() {
         $('.owl-carousel').owlCarousel({
+            autoPlay: 3000,
+            items : 1,
             loop: true,
-            margin: 10,
-            nav: true,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
-            }
+            dots: true,
         });
     });
+// $(".owl-carousel").owlCarousel({
+//     autoPlay: 3000, //Set AutoPlay to 3 seconds
+    
+
+//     items : 7,
+//     margin:10,
+//     // itemsDesktop : [1199,5],
+//     itemsDesktopSmall : [600, 6]
+//   });
 
     const inputs = document.querySelectorAll('input');
     const comment = document.querySelector('.form-comment');

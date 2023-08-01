@@ -160,10 +160,9 @@ nav ul li a{
 }
 .owl-carousel{
     width: 100%;
-    height: 100vh;
 }
 .best{
-    width: 100%;
+    width: 100% !important;
     height: 100vh;
     text-align: center;
     color: #fff;
@@ -220,27 +219,26 @@ nav ul li a{
     font-family: 'Bitter', serif; 
     line-height: 23px;
 }
-.arrow_section{
+.arrow_section {
     display: flex;
     gap: 30px;
+    align-items: center;
+}
+.arrow_section_back{
+        background-color: #eceae6!important;
 }
 .center{
    width:1060px;
    height:492px;
-   background-image: url(./assets/bar_14.jpeg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   position: relative;
 }
-.center::after{
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-color: #eceae6;
-    left: 100px;
+.center img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
 }
-
 .event{
     background-image:linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url(./assets/bar_6.jpeg) ;
    background-position: center center;
@@ -407,22 +405,27 @@ nav ul li a{
         font-family: 'Supermercado One', cursive;
 }
 .feedback{
+    width:70%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
-.feedback_left{
-    width: 56px;
-    height: 56px;
+.feedback_left {
+    width: 50px;
+    height: 50px;
     background-color: #ffffff;
+    padding: 10px 10px;
+}
+.feedback_left svg{
+    width: 30px;
+    height:30px;
+
 }
 .feedback_text{
     display: flex;
     justify-content: center;
 }
 .feedback_text p{
-    max-width: 80%;
+    width:100%;
     text-align: center;
     font-size: 18px;
     font-family: 'Bitter', serif; 

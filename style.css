@@ -197,7 +197,6 @@ nav ul li a{
     place-items: center;
 }
 .welcome h6{
-    width: max-content;
     height: 32px;
     background-color: #f3f2ee;
     color: #7f6649;
@@ -250,7 +249,6 @@ nav ul li a{
    align-items: center;
 }
 .event h4{
-    width: max-content;
     height: 32px;
     background-color:  #7f6649;
     color: #f3f2ee;
@@ -269,7 +267,7 @@ nav ul li a{
 }
 .services_text_image {
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 }
 .services_card{
     height: 434px;
@@ -434,7 +432,6 @@ nav ul li a{
     align-items: center;
 }
 .packages h5{
-    width: max-content;
     padding: 6px 16px;
     text-transform: uppercase;
     color:#7f6649;
@@ -452,7 +449,7 @@ nav ul li a{
  .packages_price {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 .price_card{
     display: flex;
@@ -550,7 +547,6 @@ nav ul li a{
     text-align: center;
     text-transform: uppercase;
     padding: 6px 16px;
-    width: max-content;
   }
   .cocktail_main h2{
     margin-block:10px 32px;
@@ -622,7 +618,6 @@ nav ul li a{
     color: #7f6649;
    font-family: 'Fjalla One', sans-serif;
    font-size: 16px;
-   width: max-content;
    margin: 0 auto;
 }
 .articles h2{
@@ -638,7 +633,7 @@ nav ul li a{
 }
 .news_main {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 30px;
 }
 .news_image{
@@ -735,7 +730,6 @@ nav ul li a{
         background: #dcaa25;
         color: #ffffff;
         margin-block:33px 0px;
-        width: max-content;
 }
 .contact_main{
     background-color:#eceae6;

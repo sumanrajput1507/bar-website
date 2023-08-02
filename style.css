@@ -129,7 +129,7 @@ nav{
     cursor: pointer;
     display: none;
     position:absolute;
-    z-index:1;
+    z-index:100;
     top: 0;
     right: 0;
 }
@@ -160,6 +160,7 @@ nav ul li a{
 }
 .owl-carousel{
     width: 100%;
+    z-index: 0;
 }
 .best{
     width: 100vw !important;
@@ -268,11 +269,10 @@ nav ul li a{
 }
 .services_text_image {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    height: 434px;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
 }
 .services_card{
-    height: 100%;
+    height: 434px;
     position: relative;
     background-color: #fff;
     display: grid;
@@ -376,7 +376,6 @@ nav ul li a{
     position: relative;
 }
 .color_grey{
-    height:434px;
     background-color:#eceae6;
 }
 .testimonials_main{
@@ -931,4 +930,8 @@ input:focus, textarea:focus { background-color: rgba(255,255,255,0.5); }
 .nav-fixed .logo img {
     width: 70px;
     height: 70px;
+}
+
+.feedback_text .owl-wrapper{
+    display: flex!important;
 }

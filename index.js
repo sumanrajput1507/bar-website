@@ -11,10 +11,6 @@ $(document).ready(function() {
             autoPlay: 3000,
             items : 1,
             loop: true,
-            dots:true,
-            responsive:{
-              item:1,
-            }
             
         });
     });

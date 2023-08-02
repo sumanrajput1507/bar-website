@@ -81,6 +81,36 @@
 
 }
 @media (max-width:768px) {
+  .price_card {
+    width: 70%;
+}
+  .best {
+    height: calc(100dvh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.best h4{
+  margin-block: 0px ;
+}
+  .header_wrap {
+    padding-block: 10px 15px;
+}
+  .logo img {
+    width: 70px;
+    height: 70px;
+}
+  .bar_image:hover:after, .bar_image:hover:before
+  {
+    display: none;
+}
+/* .bar_image img {
+  width: 70%;
+} */
+.bar_image:hover img {
+  transform: scale(1);
+}
   section {
     margin-block: 70px 0px;
 }
@@ -121,6 +151,7 @@ footer {
   gap: 35px;
   padding-inline: 42px;
 }
+
 }
 @media (max-width:540px) {
 .best p,.text h5,.color_change :nth-child(4),.welcome h2,.best p,.event h2,.cocktail_main h2,.testimonials h2{

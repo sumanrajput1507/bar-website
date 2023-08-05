@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400;1,600&family=Fjalla+One&display=swap');
 *,*::after,*::before{
     margin: 0;
     padding: 0;
@@ -439,6 +440,7 @@ nav ul li a{
     background-color: #f3f2ee;
     font-size: 16px;
     margin: 0 auto;
+    width: max-content;
  }
  .packages h2{
    font-size: 45px;
@@ -619,6 +621,7 @@ nav ul li a{
    font-family: 'Fjalla One', sans-serif;
    font-size: 16px;
    margin: 0 auto;
+   width: max-content;
 }
 .articles h2{
     font-size: 38px;
@@ -909,23 +912,19 @@ input:focus, textarea:focus { background-color: rgba(255,255,255,0.5); }
     pointer-events: auto;
     color: var(--text);
 }   
-
 .nav-fixed {
     position: fixed;
     z-index: 10;
     width: 100vw;
     background-color: #242222;
 }
-
 .nav-fixed .header_wrap {
     padding-block: 10px;
 }
-
 .nav-fixed .logo img {
     width: 70px;
     height: 70px;
 }
-
 .feedback_text .owl-wrapper{
     display: flex!important;
 }
